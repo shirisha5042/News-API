@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="sky.jpg" alt="News Logo" class="logo">
+            <ul>
+                <li><a href="#" onclick="fetchNews('general')">General</a></li>
+                <li><a href="#" onclick="fetchNews('business')">Business</a></li>
+                <li><a href="#" onclick="fetchNews('technology')">Technology</a></li>
+                <li><a href="#" onclick="fetchNews('sports')">Sports</a></li>
+                <li><a href="#" onclick="fetchNews('entertainment')">Entertainment</a></li>
+            </ul>
+            <input type="text" id="search" placeholder="Search news...">
+            <button onclick="fetchNews()">Search</button>
+        </nav>
+    </header>
+    <main id="news-container"></main>
+    <script src="index.js"></script>
+</body>
+</html>
